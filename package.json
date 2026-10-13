@@ -1,0 +1,6 @@
+{
+  "name": "sesame", "version": "0.1.0", "private": true, "type": "module",
+  "workspaces": ["frontend", "backend"],
+  "scripts": {"start": "node scripts/dev.js --open", "dev": "node scripts/dev.js", "db:setup": "node backend/scripts/setup-db.js", "test": "npm test --workspace backend && npm test --workspace frontend", "test:postgres": "node backend/scripts/test-postgres.js", "build": "npm run build --workspace frontend"},
+  "engines": {"node": ">=18.19"}
+}
